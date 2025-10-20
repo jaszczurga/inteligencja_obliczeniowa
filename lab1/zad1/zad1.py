@@ -33,23 +33,24 @@ GOOD_RESULT_THRESHOLD = 0.5
 BAD_RESULT_THRESHOLD = -0.5
 
 if fizyczna_fala > GOOD_RESULT_THRESHOLD:
-    print("Twoja kondycja fizyczna jest bardzo dobra.")
+    print(f"Twoja kondycja fizyczna jest bardzo dobra. {fizyczna_fala:.2f}")
 elif fizyczna_fala < BAD_RESULT_THRESHOLD:
-    print("Twoja kondycja fizyczna jest słaba.")
+    print(f"Twoja kondycja fizyczna jest słaba. {fizyczna_fala:.2f}")
     if oblicz_fale_fizyczna(dzien_zycia + 1) > GOOD_RESULT_THRESHOLD:
-        print("Jutro będzie lepiej!")
+        print(f"Jutro będzie lepiej! {oblicz_fale_fizyczna(dzien_zycia + 1):.2f}")
+
 
 if fala_emocjonalna > GOOD_RESULT_THRESHOLD:
-    print("Twoje samopoczucie jest bardzo dobre.")
+    print(f"Twoje samopoczucie jest bardzo dobre. {fala_emocjonalna:.2f}")
 elif fala_emocjonalna < BAD_RESULT_THRESHOLD:
-    print("Twoje samopoczucie jest słabe.")
+    print(f"Twoje samopoczucie jest słabe. {fala_emocjonalna:.2f}")
     if oblicz_fale_emocjonalna(dzien_zycia + 1) > GOOD_RESULT_THRESHOLD:
-        print("Jutro będzie lepiej!")
+        print(f"Jutro będzie lepiej! {oblicz_fale_emocjonalna(dzien_zycia + 1):.2f}")
 
 if fala_intelektualna > GOOD_RESULT_THRESHOLD:
-    print("Twoja zdolność koncentracji jest bardzo dobra.")
+    print(f"Twoja zdolność koncentracji jest bardzo dobra. {fala_intelektualna:.2f}")
 elif fala_intelektualna < BAD_RESULT_THRESHOLD:
-    print("Twoja zdolność koncentracji jest słaba.")
+    print(f"Twoja zdolność koncentracji jest słaba. {fala_intelektualna:.2f}")
     if oblicz_fale_intelektualna(dzien_zycia + 1) > GOOD_RESULT_THRESHOLD:
-        print("Jutro będzie lepiej!")
+        print(f"Jutro będzie lepiej! {oblicz_fale_intelektualna(dzien_zycia + 1):.2f}")
 
